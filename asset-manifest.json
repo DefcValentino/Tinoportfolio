@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/DefcValentino/Tinoportfolio.git/static/css/main.8a9b57f2.css",
-    "main.js": "/DefcValentino/Tinoportfolio.git/static/js/main.a3143b37.js",
-    "index.html": "/DefcValentino/Tinoportfolio.git/index.html",
-    "main.8a9b57f2.css.map": "/DefcValentino/Tinoportfolio.git/static/css/main.8a9b57f2.css.map",
-    "main.a3143b37.js.map": "/DefcValentino/Tinoportfolio.git/static/js/main.a3143b37.js.map"
+    "main.css": "/DefcValentino/Tinoportfolio/static/css/main.8a9b57f2.css",
+    "main.js": "/DefcValentino/Tinoportfolio/static/js/main.ddfd3797.js",
+    "index.html": "/DefcValentino/Tinoportfolio/index.html",
+    "main.8a9b57f2.css.map": "/DefcValentino/Tinoportfolio/static/css/main.8a9b57f2.css.map",
+    "main.ddfd3797.js.map": "/DefcValentino/Tinoportfolio/static/js/main.ddfd3797.js.map"
   },
   "entrypoints": [
     "static/css/main.8a9b57f2.css",
-    "static/js/main.a3143b37.js"
+    "static/js/main.ddfd3797.js"
   ]
 }
