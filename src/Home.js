@@ -1,5 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
+import profilephoto from './assets/images/profilephoto.webp'
+
+
 
 
 export const Home = () => {
@@ -20,7 +23,6 @@ export const Home = () => {
           setShouldScroll(true); // Mark that we need to scroll after navigation
           Navigate("/Projects");  //Navigate First
     
-          
         }
     }
 
@@ -56,7 +58,7 @@ export const Home = () => {
                             </figure>
 
                             {/* Home Caption */}
-                            <h1 className="text-lg mt-4">
+                            <h1 className="md:text-lg mt-4">
                                 From Imagination to Execution.
                                 Weaving code and creativity into seamless digital experiences 
                                 that captivate, inspire and engage.
@@ -67,7 +69,7 @@ export const Home = () => {
                         <div className="flex flex-row space-x-4 md:space-x-12 ">
                         <p className="py-4 px-8 md:px-12 md:mt-8 rounded-md md:text-xl
                             cursor-pointer border-2 hover:bg-orangebg border-orangebg bg-darkbg">
-                            <a href='/myresume.pdf' download>
+                            <a href="/myresume.pdf" download>
                              My Resume
                             </a>
                         </p>
@@ -86,8 +88,8 @@ export const Home = () => {
                     <figure className="md:px-12 ">
                         <div className="bg-orange-gradient rounded-full p-3">
                             <img className="border-4 w-[200px] h-[200px] md:w-[550px] md:h-[300px]
-                            rounded-full" src='/profilephoto.webp' 
-                            alt="profilephoto" loading='lazy' 
+                            rounded-full" src={profilephoto}
+                            alt="" loading='lazy' 
                             /> 
                         </div>
                     </figure>

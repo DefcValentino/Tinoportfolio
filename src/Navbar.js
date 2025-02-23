@@ -39,7 +39,7 @@ export const Navbar = () => {
 
   return (
     <div className="">
-      <header className="py-6 px-4  md:px-16 fixed z-50 w-full bg-gray-200">
+      <header className="md:py-4 py-3 px-4  md:px-16 fixed z-50 w-full bg-gray-200">
             <nav className="flex md:flex-row items-center justify-between">
 
                 {/* Menu Button for Mobile */}

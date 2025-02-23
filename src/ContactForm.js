@@ -101,7 +101,7 @@ export const ContactForm = () => {
                 <div className="flex space-x-2 items-center ">
                   <h1 className="font-bold text-lg md:text-3xl  
                   bg-orange-gradient bg-clip-text text-transparent">Send a Message</h1>
-                  <hr className="w-[10rem] border-t-2 "/>
+                  <hr className="w-[8rem] border-t-2 "/>
                 </div>
                 
                 {/*Name Field*/}
@@ -114,7 +114,6 @@ export const ContactForm = () => {
                    />
                    {errors.name && <p className="text-sm text-red-500">{errors.name.message }</p>}
                 </div>
-
 
 
                 {/*Email Field*/}

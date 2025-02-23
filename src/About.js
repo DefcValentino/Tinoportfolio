@@ -1,4 +1,6 @@
 import React from 'react'
+import standpic from './assets/images/standpic.webp'
+import award from './assets/images/award.jpg'
 
 export const About = () => {
   return (
@@ -48,7 +50,7 @@ export const About = () => {
                   <figure className="border rounded-lg "> 
                     <div className="p-2 w-[300px] h-[500px]  ">
                       <img className="w-full h-full object-cover rounded-lg"
-                       src="/standpic.webp" alt=""/>
+                       src={standpic} alt=""/>
                     </div>
                   </figure>
               </article>
@@ -186,7 +188,7 @@ export const About = () => {
             {/* Award Certificate */}
             <figure className="md:h-[300px] md:w-[500px] border rounded-lg">
               <img className="h-full w-full rounded-lg p-2" 
-              src="/award.jpg" alt="" loading='lazy'/>
+              src={award} alt="" loading='lazy'/>
             </figure>
           </div>
          

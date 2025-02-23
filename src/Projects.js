@@ -3,6 +3,11 @@ import { ContactForm } from './ContactForm';
 import { useLocation } from 'react-router-dom';
 import { useRef, useEffect} from "react";
 // import { useNavigate } from 'react-router-dom'
+import fundifyonboard from './assets/images/fundifyonboard.jpg'
+import exquisite from './assets/images/exquisite.jpg'
+import atlas from './assets/images/atlas.png'
+import recipe1 from './assets/images/recipe1.png'
+
 
 
 
@@ -44,7 +49,7 @@ export const Projects = () => {
               <fig className="md:w-[500px] md:h-[300px]">
                 <img className="h-full w-full object-cover rounded-lg
                  transition-transform duration-300 hover:scale-105" 
-                src="./fundifyonboard.jpg" alt=".."/>
+                src={fundifyonboard} alt=".."/>
               </fig>
 
               {/* project description */}
@@ -81,7 +86,7 @@ export const Projects = () => {
               <fig className="md:w-[500px] md:h-[300px]">
                 <img className="h-full w-full object-cover rounded-lg
                 transition-transform duration-300 hover:scale-105" 
-                src="./atlas.png" alt=".."/>
+              src={atlas} alt=".."/>
               </fig>
 
               {/* project description */}
@@ -118,7 +123,7 @@ export const Projects = () => {
               <fig className="md:w-[500px] md:h-[300px]">
                 <img className="h-full w-full object-cover rounded-lg
                 transition-transform duration-300 hover:scale-105"
-                 src="./exquisite.jpg" alt=".."/>
+                 src={exquisite} alt=".."/>
               </fig>
 
               {/* project description */}
@@ -157,7 +162,7 @@ export const Projects = () => {
               <fig className="md:w-[500px] md:h-[300px]">
                 <img className="h-full w-full object-cover rounded-lg
                 transition-transform duration-300 hover:scale-105"
-                 src="./recipe1.png" alt=".."/>
+                 src={recipe1} alt=".."/>
               </fig>
 
               {/* project description */}
