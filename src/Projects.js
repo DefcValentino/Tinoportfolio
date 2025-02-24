@@ -6,7 +6,7 @@ import { useRef, useEffect} from "react";
 import fundifyonboard from './assets/images/fundifyonboard.jpg'
 import exquisite from './assets/images/exquisite.jpg'
 import atlas from './assets/images/atlas.png'
-import recipe1 from './assets/images/recipe1.png'
+import digiduka from './assets/images/digiduka.png'
 
 
 
@@ -162,24 +162,28 @@ export const Projects = () => {
               <fig className="md:w-[500px] md:h-[300px]">
                 <img className="h-full w-full object-cover rounded-lg
                 transition-transform duration-300 hover:scale-105"
-                 src={recipe1} alt=".."/>
+                 src={digiduka} alt=".."/>
               </fig>
 
               {/* project description */}
               <article className="text-left space-y-3 md:w-[450px]">
                 <p className="text-orangebg text-2xl
                 bg-orange-gradient bg-clip-text text-transparent">Featured Project</p>
-                <h1 className="text-2xl md:text-3xl hover:underline"><a href="./">CookShare Website</a></h1>
+                <h1 className="text-2xl md:text-3xl hover:underline"><a href="./">Digiduka Website</a></h1>
                 <p>
-                  A dynamic food blog built with Next.js and Tailwind CSS, integrating the 
-                  Spoonacular API to fetch and display recipes seamlessly, offering users an
-                  engaging and visually appealing culinary experience.
+                  A responsive landing page for DigiDuka, a platform helping market vendors
+                   gain social media literacy through subscription plans. Built with Tailwind CSS 
+                   and JavaScript, it showcases my frontend skills and ability to collaborate 
+                   effectively with designers to bring ideas to life
                 </p>
 
                 <div className="flex items-center space-x-6 md:flex-row">
-                  <a href="."><i class="devicon-github-original text-3xl md:text-5xl"></i></a>
-                  <p className="cursor-pointer py-2 px-6 bg-gray-200 hover:bg-darkbgtwo hover:text-gray-200
-                   hover:border md:text-lg text-black rounded-lg">Visit Project</p>
+                  <a href="https://github.com/DefcValentino/DigiDuka.git">
+                  <i class="devicon-github-original text-3xl md:text-5xl"></i></a>
+                  <p className="cursor-pointer py-2 px-6 bg-gray-200 hover:bg-darkbgtwo
+                   hover:text-gray-200
+                   hover:border md:text-lg text-black rounded-lg">
+                    <a href='https://defcvalentino.github.io/DigiDuka/'>Visit Project</a></p>
                 </div>
               </article>
             </div>

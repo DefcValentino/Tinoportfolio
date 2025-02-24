@@ -92,15 +92,6 @@ export const About = () => {
               </div>
             </figure>
 
-            {/* skill 3 */}
-            <figure className="rounded-lg border p-2  border-orangebg
-             transition-transform duration-300 hover:translate-y-[-4px]">
-              <div className="py-8 rounded-lg bg-darkbgtwo">
-                <i class="devicon-nextjs-plain text-5xl"></i>
-                <p>Next.Js</p>
-              </div>
-            </figure>
-
             {/* skill 4 */}
             <figure className="rounded-lg border p-2  border-orangebg
              transition-transform duration-300 hover:translate-y-[-4px]">
