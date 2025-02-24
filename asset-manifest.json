@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Tinoportfolio/static/css/main.0f478fbc.css",
-    "main.js": "/Tinoportfolio/static/js/main.543cc372.js",
-    "static/media/recipe1.png": "/Tinoportfolio/static/media/recipe1.ac7d9ef343586454133f.png",
+    "main.js": "/Tinoportfolio/static/js/main.6b7519da.js",
+    "static/media/digiduka.png": "/Tinoportfolio/static/media/digiduka.d918065243d96c0acf47.png",
     "static/media/atlas.png": "/Tinoportfolio/static/media/atlas.0fd9ff1a02bf3d2bf80c.png",
     "static/media/profilephoto.webp": "/Tinoportfolio/static/media/profilephoto.c44fa0ef6cf27e6cfa35.webp",
     "static/media/exquisite.jpg": "/Tinoportfolio/static/media/exquisite.a43a3bd443c7de50f3d7.jpg",
@@ -11,10 +11,10 @@
     "static/media/fundifyonboard.jpg": "/Tinoportfolio/static/media/fundifyonboard.8f1dc000b482838a8578.jpg",
     "index.html": "/Tinoportfolio/index.html",
     "main.0f478fbc.css.map": "/Tinoportfolio/static/css/main.0f478fbc.css.map",
-    "main.543cc372.js.map": "/Tinoportfolio/static/js/main.543cc372.js.map"
+    "main.6b7519da.js.map": "/Tinoportfolio/static/js/main.6b7519da.js.map"
   },
   "entrypoints": [
     "static/css/main.0f478fbc.css",
-    "static/js/main.543cc372.js"
+    "static/js/main.6b7519da.js"
   ]
 }
