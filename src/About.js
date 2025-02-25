@@ -1,12 +1,21 @@
 import React from 'react'
 import standpic from './assets/images/standpic.webp'
 import award from './assets/images/award.jpg'
+import { motion } from "framer-motion";
+
+
+
 
 export const About = () => {
   return (
     <div className="h-full px-8 md:px-16 w-full bg-darkbg overflow-hidden ">
           {/* About me Section */}
-        <section className="">
+        <motion.section 
+            initial={{ opacity: 0, y:50 }} 
+            animate={{ opacity: 1, y:0}}
+            transition={{ duration: 1, ease: "easeOut" }}
+
+           className="">
             <div className="pt-24 space-y-8">
               <h1 className="text-gray-200 font-extrabold 
               text-2xl md:text-4xl"> 
@@ -55,11 +64,16 @@ export const About = () => {
                   </figure>
               </article>
             </div>
-        </section>
+        </motion.section>
 
 
         {/* Skills section */}
-        <section className="pt-28 md:pt-40 space-y-8">
+        <motion.section className="pt-28 md:pt-40 space-y-8"
+            initial={{ opacity: 0, y:50 }} 
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ amount: 0.2 }}
+        >
 
           <article className="text-gray-200 md:px-12">
             <h1 className="bg-orange-gradient bg-clip-text text-transparent p-2
@@ -146,12 +160,18 @@ export const About = () => {
             </figure>
 
           </div>
-        </section>
+        </motion.section>
 
 
 
         {/* Award Section */}
-        <section className="pt-28 md:pt-40 space-y-8">
+        <motion.section 
+          initial={{ opacity: 0, y:50 }} 
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ amount: 0.2 }}
+
+          className="pt-28 md:pt-40 space-y-8">
            <h1 className="text-orangebg bg-orange-gradient bg-clip-text p-2 text-transparent
            font-bold text-2xl md:text-4xl">Award Of Recognition</h1>
           
@@ -182,12 +202,19 @@ export const About = () => {
               src={award} alt="" loading='lazy'/>
             </figure>
           </div>
-         
-        </section>
+        </motion.section>
 
 
-         {/* Experience Section */}
-        <section className="pt-28 md:pt-40 space-y-8">
+
+        {/* Experience Section */}
+        <motion.section 
+          initial={{ opacity: 0, y:50 }} 
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ amount: 0.2 }}
+
+
+           className="pt-28 md:pt-40 space-y-8">
             <h1 className="bg-orange-gradient bg-clip-text text-transparent p-2
              font-bold text-2xl md:text-4xl">Experience</h1>
           
@@ -244,11 +271,12 @@ export const About = () => {
               </article>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         <section className="pt-32 md:pt-40 space-y-12">
 
         </section>
     </div>
+  
   )
 }

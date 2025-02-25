@@ -7,6 +7,7 @@ import fundifyonboard from './assets/images/fundifyonboard.jpg'
 import exquisite from './assets/images/exquisite.jpg'
 import atlas from './assets/images/atlas.png'
 import digiduka from './assets/images/digiduka.png'
+import { motion } from "framer-motion";
 
 
 
@@ -15,11 +16,19 @@ import digiduka from './assets/images/digiduka.png'
 export const Projects = () => {
   const location = useLocation();
   const contactRef = useRef(null);
+  const projectRef = useRef(null);
 
 
   useEffect(() => {
-    if (location.state?.scrollToContact) {
+
+    if (location.state?.scrollToProjects && projectRef.current) {
+      projectRef.current.scrollIntoView({ behavior: "smooth" });
+
+    }
       
+
+    if (location.state?.scrollToContact) {
+    
       setTimeout(() => {
         contactRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 100); // Delay to ensure navigation updates before scrolling
@@ -33,8 +42,14 @@ export const Projects = () => {
     <div className="h-full px-8 md:px-16 w-full bg-darkbg overflow-hidden ">
       
       {/* Project Section */}
-      <section  className="pt-24 space-y-8 text-gray-200">
-       <h1 className="bg-orange-gradient bg-clip-text text-transparent
+      <motion.section ref={projectRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }} // Animate into view
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ amount: 0.2 }}
+
+       className="pt-24 space-y-8 text-gray-200">
+       <h1  className="bg-orange-gradient bg-clip-text text-transparent
         font-extrabold text-2xl md:text-4xl py-3">Innovating with Purpose </h1>
         <div className="flex flex-col space-y-16 items-center">
         
@@ -76,18 +91,26 @@ export const Projects = () => {
 
 
           {/* Card Wrapper */}
-          <div className=" md:w-[1100px] border rounded-lg p-2 border-orangebg
+          <motion.div 
+            initial={{ opacity: 0, y:50 }} 
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ amount: 0.2 }}
+
+           className=" md:w-[1100px] border rounded-lg p-2 border-orangebg
            transition-transform duration-300 hover:translate-y-[-5px]">
             {/* Project Card 2*/}
             <div className="md:p-8 p-6 flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between
              items-center bg-darkbgtwo rounded-lg">
               
+
               {/* Project image */}
               <fig className="md:w-[500px] md:h-[300px]">
                 <img className="h-full w-full object-cover rounded-lg
                 transition-transform duration-300 hover:scale-105" 
               src={atlas} alt=".."/>
               </fig>
+
 
               {/* project description */}
               <article className="text-left space-y-3 md:w-[450px]">
@@ -108,12 +131,19 @@ export const Projects = () => {
                 </div>
               </article>
             </div>
-          </div>
+          </motion.div>
 
 
 
           {/* Card Wrapper */}
-          <div className=" md:w-[1100px] border rounded-lg p-2 border-orangebg
+          <motion.div 
+            initial={{ opacity: 0, y:50 }} 
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ amount: 0.2 }}
+
+
+            className="md:w-[1100px] border rounded-lg p-2 border-orangebg
            transition-transform duration-300 hover:translate-y-[-5px]">
             {/* Project Card 3*/}
             <div className="md:p-8 p-6 flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between 
@@ -147,13 +177,20 @@ export const Projects = () => {
                 </div>
               </article>
             </div>
-          </div>
+          </motion.div>
 
 
 
           {/* Card Wrapper */}
-          <div className=" md:w-[1100px] border rounded-lg p-2 border-orangebg 
-          transition-transform duration-300 hover:translate-y-[-5px]">
+          <motion.div 
+            initial={{ opacity: 0, y:50 }} 
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ amount: 0.2 }}
+
+            
+            className=" md:w-[1100px] border rounded-lg p-2 border-orangebg 
+            transition-transform duration-300 hover:translate-y-[-5px]">
             {/* Project Card 4*/}
             <div className="md:p-8 p-6 flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between
              items-center bg-darkbgtwo rounded-lg">
@@ -187,16 +224,24 @@ export const Projects = () => {
                 </div>
               </article>
             </div>
-          </div>
+          </motion.div>
+
+
         </div>
 
-      </section>
+      </motion.section>
 
 
       {/* Contact Form */}
-      <section ref={contactRef} id="contactForm" className=" pt-24 space-y-8 text-gray-200">
+      <motion.section ref={contactRef} id="contactForm" 
+        initial={{ opacity: 0, y:50 }} 
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ amount: 0.2 }}
+
+      className=" pt-24 space-y-8 text-gray-200">
         <ContactForm/>
-      </section>
+      </motion.section>
     </div>
   );
 };

@@ -39,7 +39,7 @@ export const Navbar = () => {
 
   return (
     <div className="">
-      <header className="md:py-4 py-3 px-4  md:px-16 fixed z-50 w-full bg-gray-200">
+      <header className="md:py-4 py-3 px-4  md:px-16 fixed z-50 w-full bg-gray-300  ">
             <nav className="flex md:flex-row items-center justify-between">
 
                 {/* Menu Button for Mobile */}
@@ -58,14 +58,17 @@ export const Navbar = () => {
 
                   } md:flex items-center md:space-x-8 md:w-auto`} >
 
-                    <div className="flex flex-col md:flex-row items-center  bg-gray-200
-                     rounded-lg md:space-y-0 md:space-x-12 space-y-6 bg-opacity-80 w-[250px] md:py-0 py-8 backdrop-blur-md">
+                    <div className="flex flex-col md:flex-row items-center  bg-gray-300
+                     rounded-lg md:space-y-0 md:space-x-12 space-y-6 bg-opacity-80 w-[250px] 
+                       md:py-0 py-8 backdrop-blur-md">
                         <li className="relative group" >
                           <NavLink className="text-darkbg font-bold relative" 
                           onClick={() => setMenuOpen(false)} to="/Home">
                             Home
-                            <span className="absolute left-0 bottom-[-2px] h-[2px] w-full bg-orangebg scale-x-0
-                             group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left "></span>
+                            <span className="absolute left-0 bottom-[-2px] h-[2px] w-full
+                             bg-orangebg scale-x-0
+                             group-hover:scale-x-100 transition-transform duration-300 
+                             ease-in-out origin-left "></span>
                           </NavLink>
                         </li>   
 
@@ -73,8 +76,10 @@ export const Navbar = () => {
                           <NavLink className="text-darkbg font-bold relative"
                           onClick={() => setMenuOpen(false)} to="/About">
                             About
-                            <span className="absolute left-0 bottom-[-2px] h-[2px] w-full bg-orangebg scale-x-0
-                             group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left "></span>
+                            <span className="absolute left-0 bottom-[-2px] h-[2px] w-full
+                             bg-orangebg scale-x-0
+                             group-hover:scale-x-100 transition-transform duration-300
+                              ease-in-out origin-left "></span>
                           </NavLink>
                         </li>    
 
