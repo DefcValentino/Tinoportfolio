@@ -126,8 +126,13 @@ export const Projects = () => {
                 <div className="flex items-center space-x-6 md:flex-row">
                   <a href="https://github.com/DefcValentino/atlastvest-app.git">
                   <i class="devicon-github-original text-3xl md:text-5xl"></i></a>
-                  <p className="cursor-pointer py-2 px-6 bg-gray-200 hover:bg-darkbgtwo hover:text-gray-200
-                   hover:border md:text-lg text-black rounded-lg"><a href="." alt="..">Visit Project</a></p>
+                  <p className="cursor-pointer py-2 px-6 bg-gray-200 hover:bg-darkbgtwo
+                   hover:text-gray-200
+                   hover:border md:text-lg text-black rounded-lg">
+                    <a href="https://defcvalentino.github.io/atlastvest-app/" alt="..">
+                      Visit Project
+                    </a>
+                  </p>
                 </div>
               </article>
             </div>
